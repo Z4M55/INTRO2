@@ -7,31 +7,31 @@ st.header("Dies ist der Anfang und der Ort, an dem ich meine Anwendungen für mu
 st.write("Ich kann problemlos Backend und Frontend erstellen ;).")
 image = Image.open('INtro.jpg')
 
-st.image(image, caption='Interfaces multimodales')
+st.image(image, caption='Multimodale Schnittstellen')
 
 
-texto = st.text_input('Escribe algo', 'Este es mi texto')
-st.write('El texto escrito es', texto)
+texto = st.text_input('Schreib etwas', 'Schreiben')
+st.write('Der geschriebene Text ist', Text)
 
-st.subheader("Ahora usemos 2 Columnas")
+st.subheader("Verwenden wir nun 2 Spalten")
 
 col1, col2 = st.columns(2)
 
 with col1:
-    st.subheader("Esta es la primera columna")
-    st.write("Las interfaces multimodales mejoran la experiencia de usuario")
-    resp = st.checkbox('Estoy de acuerdo')
+    st.subheader("Erste Spalte")
+    st.write("Multimodale Schnittstellen verbessern das Benutzererlebnis")
+    resp = st.checkbox('Ich stimme zu.')
     if resp:
-       st.write('Correcto!')
+       st.write('Richtig!')
   
 with col2:
-    st.subheader("Esta es la segunda columna")
-    modo = st.radio("Que Modalidad es la principal en tu interfaz", ('Visual', 'auditiva', 'Táctil'))
-    if modo == 'Visual':
+    st.subheader("Dies ist die zweite Kolumne.")
+    modo = st.radio("Welche Modalität ist die wichtigste in Ihrer Schnittstelle?", ('taktil', 'auditiv', 'taktil'))
+    if modo == 'taktil':
        st.write('La vista es fundamental para tu interfaz')
-    if modo == 'auditiva':
+    if modo == 'auditiv':
        st.write('La audición es fundamental para tu interfaz')
-    if modo == 'Táctil':
+    if modo == 'taktil':
        st.write('El tacto es fundamental para tu interfaz')
         
 st.subheader("Uso de Botones")
