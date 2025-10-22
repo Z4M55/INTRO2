@@ -11,7 +11,7 @@ st.image(image, caption='Multimodale Schnittstellen')
 
 
 texto = st.text_input('Schreib etwas', 'Schreiben')
-st.write('Der geschriebene Text ist', Text)
+st.write('Der geschriebene Text ist', texto)
 
 st.subheader("Verwenden wir nun 2 Spalten")
 
